@@ -1,1 +1,1 @@
-# cautious-happiness
+# This is an Internet of things framework from the automobile industry, which is mainly used to analyze can protocol or some binary flows customized in the work. Its processing flow is that the protocol defined in the Internet of things device is consistent with the requirements of the server, and there is a detailed definition for the bit bit bits of the protocol, such as deviceid, devicetype. This will also be the server's upper level representation in the stored data. This can better serve the platform of big data
