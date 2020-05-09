@@ -10,4 +10,4 @@
    7. Encryption and decryption certificate and compression rules
    
  # Infrastructure
-   ![alt 属性文本](C:\Users\Administrator.SC-201911031329\Downloads\iotBitServer.png)
+   ![alt 属性文本](https://github.com/armFunNing/iotBitServer/blob/master/iotBitServer.png)
