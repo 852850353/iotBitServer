@@ -4,7 +4,7 @@
    1. The service adopts TCP protocol, and the upper layer is encapsulated as binary stream
    2. The efficiency of the server needs to reach ms level after data reporting to the server.
    3. Message subscription processing, similar to event driven
-   4. The format is loaded as a custom binary stream flag. Of course, this can be in any format
+   4. The format is loaded with a custom binary stream flag. Of course, it can be in any format. This method can translate the bit meaning of the upper layer, which is equivalent to the second level cache processing
    5. Default database support, database extension (asynchronous component) can be performed according to item 4 in the later stage
    6. Own distributed support (call protocol is RPC)
    7. Encryption and decryption certificate and compression rules
