@@ -8,3 +8,6 @@
    5. Default database support, database extension (asynchronous component) can be performed according to item 4 in the later stage
    6. Own distributed support (call protocol is RPC)
    7. Encryption and decryption certificate and compression rules
+   
+ # Infrastructure
+   ![alt 属性文本](C:\Users\Administrator.SC-201911031329\Downloads\iotBitServer.png)
