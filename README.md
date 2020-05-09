@@ -5,6 +5,6 @@
    2. The efficiency of the server needs to reach ms level after data reporting to the server.
    3. Message subscription processing, similar to event driven
    4. The format is loaded as a custom binary stream flag. Of course, this can be in any format
-   5. Default database support, database extension (asynchronous component) can be performed according to Item 4 in the later stage
+   5. Default database support, database extension (asynchronous component) can be performed according to item 4 in the later stage
    6. Own distributed support (call protocol is RPC)
    7. Encryption and decryption certificate and compression rules
