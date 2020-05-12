@@ -11,3 +11,25 @@
    
  # Infrastructure
    ![BaseFramework](https://github.com/armFunNing/iotBitServer/blob/master/BaseFramework.png)
+
+ # Project-tree
+	./
+	├── 3rdparty					Third-party libraries
+	├── cmake
+	├── CMakeLists.txt
+	├── CMakeLists.txt.user
+	├── docs
+	├── examples
+	├── iotAlive					Server node alive widget, to use RPC or Thrift connection framework
+	├── iotBaseProtocol				Base connection class, from package TCP/UDP/HTTP protocol 3rdparty
+	├── iotCore						Server core framework,The register function subscribes to the message
+	├── iotFileIO					Definitions configuration files  class and more.
+	├── iotMemory					Memory manager server
+	├── iotModel				    Upper configuration module, eg:Compression library(zlib)、Check the library(CRC)
+	├── iotTimeDB					A chronological database encapsulates class and so on
+	├── iotTools					A user-friendly tool, such as a back-end service client from Qt
+	├── test						An internal test module from the developer
+	├── en_README.md
+	└── zh_README.md
+
+	13 directories, 5 files

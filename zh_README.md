@@ -16,3 +16,23 @@
    
  # 基础架构
    ![BaseFramework](https://github.com/armFunNing/iotBitServer/blob/master/BaseFramework.png)
+ 
+ # 工程树
+		./
+	├── 3rdparty					第三方库
+	├── cmake
+	├── CMakeLists.txt
+	├── CMakeLists.txt.user
+	├── docs
+	├── examples
+	├── iotAlive					运用RPC或者Thrift缔造的服务结点组件
+	├── iotBaseProtocol				封装TCP/UDP/HTTP协议的基础连接类
+	├── iotCore						服务内核框架，用于注册消息订阅
+	├── iotFileIO					一些配置文件类
+	├── iotMemory					内存管理模块
+	├── iotModel				    上层配置模块，例如:压缩库(zlib)，检查库(CRC)
+	├── iotTimeDB					按时间顺序排列的数据库封装类等等
+	├── iotTools					一个用户友好的工具，例如来自Qt的后端服务客户端
+	├── test						开发人员提供的内部测试模块
+	├── en_README.md
+	└── zh_README.md
