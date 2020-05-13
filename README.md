@@ -1,5 +1,6 @@
-<div align= center> ![logo](https://github.com/armFunNing/iotBitServer/blob/master/docs/logo100_100.png) </div>
-	
+# logo
+![logo](https://github.com/armFunNing/iotBitServer/blob/master/docs/logo100_100.png)
+
 # 中文说明
    这是一个来自汽车行业的物联网框架，但不限于汽车行业。
    它主要用于分析工作中定制的can协议或一些二进制流。
@@ -7,6 +8,7 @@
    这也将是存储数据中服务器的上层表示。这可以更好的服务于大数据平台。
    这个项目不同于字符流服务的服务器，因为协议是用二进制表示的，所以我们可以使用有限的带宽资源、CPU资源和内存资源来做更多的事情。
    这个想法看起来有点疯狂，但是它起源于谷歌协议序列化的方式。我相信您已经在Linux下使用了htons()函数，这是一种二进制的格式。
+   
 ## 前期需求
 	1. 服务采用TCP协议，上层封装为二进制流
 	2. 数据向服务器报告后，服务器的效率需要达到ms级。
@@ -43,6 +45,7 @@
 	
 # English explain
    This is an Internet of things framework from the automotive industry, but not limited to the automotive industry. It is mainly used to analyze can protocol or some binary flows customized in work. Its processing flow is defined as the agreement in the Internet of things device is consistent with the requirements of the server, and has a detailed explanation for the bit bit bit of the protocol, such as deviceid and devicetype. This will also be the server's upper level representation in the stored data. This can better serve the platform of big data.This project is different from the server of character stream service, because the protocol is represented as binary, so we can use limited bandwidth resources, CPU resources and memory resources to do more things. This idea seems a bit crazy, but it originated from the way of Google's protocolbuf serialization. I believe you have used htons() function under Linux, which is a bit of a type.
+   
 ## Requirement description
    1. The service adopts TCP protocol, and the upper layer is encapsulated as binary stream
    2. The efficiency of the server needs to reach ms level after data reporting to the server.
