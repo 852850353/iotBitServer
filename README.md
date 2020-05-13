@@ -2,7 +2,7 @@
 ![logo](https://github.com/armFunNing/iotBitServer/blob/master/docs/logo100_100.png)
 
 # 中文说明
-   这是一个来自汽车行业的物联网框架，但不限于汽车行业。
+   &nbsp&nbsp这是一个来自汽车行业的物联网框架，但不限于汽车行业。
    它主要用于分析工作中定制的can协议或一些二进制流。
    其处理流程定义为物联网设备中的协议符合服务器的要求，并对协议的位比特位进行了详细的说明，如deviceid和devicetype。
    这也将是存储数据中服务器的上层表示。这可以更好的服务于大数据平台。
