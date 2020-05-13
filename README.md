@@ -20,7 +20,7 @@
    
  ## 基础架构
    ![BaseFramework](https://github.com/armFunNing/iotBitServer/blob/master/docs/BaseFramework.png)
- 
+   ![DataFlows](https://github.com/armFunNing/iotBitServer/blob/master/docs/DataFlows.png)
  ## 工程树
 		./
 	├── 3rdparty					第三方库
