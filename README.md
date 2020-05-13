@@ -18,9 +18,14 @@
 	6. 自己的分布式支持(调用协议是RPC)
 	7. 加密和解密证书和压缩规则
    
- ## 基础架构
+## 架构
+### 分层架构
    ![BaseFramework](https://github.com/armFunNing/iotBitServer/blob/master/docs/BaseFramework.png)
+   
+### 数据流架构
    ![DataFlows](https://github.com/armFunNing/iotBitServer/blob/master/docs/DataFlows.png)
+   数据通过TCP/UDP等协议进行数据通信，RPC不用说了MCU物联网设备并不能支持。进过数据协议层中进行解压缩、解加密等操作，转发给核心服务层。这时已经是分包之后的二进制数据，完全和二进含义文件能够对照对比，假设二进制数据符合二进制含义文件中的定义，内部会进行数据的持久化操作（默认只是相对持久化，一般会采取日志文件的方式保留7天，因为我怕磁盘堆满，最后数据和其他DB系统对接，此时数据出口可以被翻译成二进制含义文件的格式，为了更好的ASCII支持将对相关的数据位进行String化）。
+   
  ## 工程树
 		./
 	├── 3rdparty					第三方库
