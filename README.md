@@ -1,5 +1,5 @@
 # logo
-<div align=center/>![logo]("https://github.com/armFunNing/iotBitServer/blob/master/docs/logo100_100.png")</div>
+<div align=center/>![logo]("https://github.com/armFunNing/iotBitServer/blob/master/docs/logo100_100.png")
 
 # 中文说明
    这是一个来自汽车行业的物联网框架，但不限于汽车行业。
