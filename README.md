@@ -19,7 +19,7 @@
 	7. 加密和解密证书和压缩规则
    
  ## 基础架构
-   ![BaseFramework](https://github.com/armFunNing/iotBitServer/blob/master/BaseFramework.png)
+   ![BaseFramework](https://github.com/armFunNing/iotBitServer/blob/master/docs/BaseFramework.png)
  
  ## 工程树
 		./
