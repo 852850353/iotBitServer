@@ -3,6 +3,17 @@ cmake_minimum_required (VERSION 2.8)
 project(iotCore)
 
 #add_subdirectory (3rdparty)
-add_subdirectory (iotTools)
-add_subdirectory (test)
+set(SRCDIR ${CMAKE_CURRENT_SOURCE_DIR}/Src)
+set(ABSTRACTDIR ${SRCDIR}/Abstract)
+set(SUBSYSDIR ${SRCDIR}/SubSystem)
+
+add_subdirectory(${SUBSYSDIR})
+
+include_directories(${SRCDIR} ${ABSTRACTDIR} ${PIPEDIR} ${SUBSYSDIR})
+
+aux_source_directory(${SRCDIR} SRCSRC)
+aux_source_directory(${ABSTRACTDIR} ABSTRACTSRC)
+
+add_executable(${CMAKE_PROJECT_NAME} main.cpp ${SRCSRC} ${ABSTRACTSRC})
+target_link_libraries(${CMAKE_PROJECT_NAME} SubSystem)
 

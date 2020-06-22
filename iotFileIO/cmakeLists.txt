@@ -1,3 +1,7 @@
 cmake_minimum_required (VERSION 2.8.0)
 
 project (iotFileIO)
+
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} SRC)
+
+add_library(iotFileIO ${SRC})

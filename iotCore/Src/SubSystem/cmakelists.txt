@@ -1,0 +1,16 @@
+cmake_minimum_required (VERSION 2.8.0)
+
+project(SubSystem)
+
+set(SUBROOT ${CMAKE_CURRENT_SOURCE_DIR}/Src)
+set(IRQSUBDIR ${SUBROOT}/irqSubSystem)
+set(PIPEDIR ${SUBROOT}/pipe)
+set(SIGSLOTDIR ${SUBROOT}/SigSlot)
+set(THWORKDIR ${SUBROOT}/thWorker)
+
+aux_source_directory(${IRQSUBDIR} IRQSRC)
+aux_source_directory(${PIPEDIR} PIPRSRC)
+aux_source_directory(${SIGSLOTDIR} SIGSLOTSRC)
+aux_source_directory(${THWORKDIR} THWORKSRC)
+
+add_library(SubSystem ${IRQSRC} ${PIPRSRC} ${SIGSLOTSRC} ${THWORKSRC})

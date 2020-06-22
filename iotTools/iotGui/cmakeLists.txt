@@ -4,19 +4,19 @@ project (iotGui)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
 find_package(Qt5Widgets)
 
-set(ITFS ${CMAKE_CURRENT_SOURCE_DIR}/interface)
 set(CWdt ${CMAKE_CURRENT_SOURCE_DIR}/CoreWidget)
 
-include_directories(${ITFS} ${CWdt})
+include_directories(${CWdt})
 
-aux_source_directory(${ITFS} ITFS_SRC)
 aux_source_directory(${CWdt} CWdt_SRC)
 
-message(${ITFS_SRC} ${CWdt_SRC})
+message(${CWdt_SRC})
 
-add_executable(${CMAKE_PROJECT_NAME} main.cpp ${CWdt_SRC} ${ITFS_SRC})
+add_executable(${CMAKE_PROJECT_NAME} main.cpp ${CWdt_SRC})
 target_link_libraries(${CMAKE_PROJECT_NAME} Qt5::Core Qt5::Widgets)
 
 install(TARGETS ${CMAKE_PROJECT_NAME}

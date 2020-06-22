@@ -1,11 +1,12 @@
+#include "iotMainWindow.h"
 #include <QApplication>
-#include "MappingCreator.h"
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-    QApplication a(argc,argv);
+    QApplication a(argc, argv);
 
-    MappingCreator::getInstance()->show();
+    iotMainWindow w;
+    w.show();
 
     return a.exec();
 }
