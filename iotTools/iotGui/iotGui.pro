@@ -1,14 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2020-06-20T20:09:15
+# Project created by QtCreator 2020-07-10T15:27:09
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = iotGui
+TARGET = iotgui
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,21 +26,28 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
+    iotMainWindow.cpp \
     iotServerEdit.cpp \
     iotServerNodeTree.cpp \
-    iotMainWindow.cpp
+    iotguilogoutput.cpp \
+    iotLinksql.cpp
+
 
 HEADERS += \
+    iotMainWindow.h \
     iotServerEdit.h \
     iotServerNodeTree.h \
-    iotMainWindow.h
-
-FORMS += \
-    iotServerEdit.ui \
-    iotServerNodeTree.ui \
-    iotMainWindow.ui
+    iotguilogoutput.h \
+    iotLinksql.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+FORMS += \
+    iotMainWindow.ui \
+    iotServerEdit.ui \
+    iotServerNodeTree.ui
+
+DISTFILES +=
